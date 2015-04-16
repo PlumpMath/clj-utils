@@ -6,3 +6,6 @@
 (defn keymap [f m]
   (into {} (for [[k v] m] [(f k) v])))
 
+(defn indexed [xs]
+  (map-indexed vector xs))
+
